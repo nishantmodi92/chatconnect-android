@@ -1,49 +1,30 @@
-# 📱 ChatConnect
+# 💬 ChatConnect
 
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?style=flat&logo=android&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
-![Hilt](https://img.shields.io/badge/Hilt-8E2DE2?style=flat)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=android&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)
+![MVVM](https://img.shields.io/badge/MVVM-Architecture-blueviolet?style=for-the-badge)
+![Live](https://img.shields.io/badge/Real--Time%20Chat-Active-brightgreen?style=for-the-badge)
 
-## 🔒 Real-time Encrypted Messaging App
 
-ChatConnect is a fully-featured secure chat application built with Kotlin and Jetpack Compose. It supports real-time encrypted messaging, group chats, media sharing, and FCM-based push notifications.
+A real-time chat application built using **Kotlin**, **Jetpack Compose**, and **Firebase**, designed for smooth, secure, and responsive messaging.
 
----
-
-## ✨ Features
-
-- 🔐 End-to-End Encrypted Messaging
-- 👥 Group Chats & Last Seen Indicator
-- 🎤 Voice & Image Sharing
-- 🔔 Push Notifications with FCM
-- 💬 Emoji Reactions
-- 📱 99.9% Crash-Free Stability
-
----
+## 🚀 Features
+- 🔐 Firebase Authentication (Email login/signup)
+- 💬 Real-time messaging with Firestore
+- 📥 Push notifications via Firebase Cloud Messaging (FCM)
+- 🎨 Jetpack Compose UI with responsive layouts
 
 ## 🧰 Tech Stack
+- **Language**: Kotlin
+- **UI**: Jetpack Compose
+- **Backend**: Firebase Auth + Firestore
+- **Architecture**: MVVM, StateFlow
+- **Extras**: Coroutines, Navigation Component
 
-- **Language:** Kotlin
-- **UI:** Jetpack Compose, Material Design 3
-- **Architecture:** MVVM, Clean Architecture, Modularization
-- **Dependency Injection:** Hilt
-- **Database & Backend:** Firebase Firestore, Firebase Auth, Firebase Cloud Messaging
-- **Image/Media:** Glide
+## 📦 Architecture
+Scalable MVVM pattern with reactive UI and clean separation of concerns.
 
----
-
-## 🤝 Contributing
-Pull requests are welcome. For major changes, please open an issue first.
-
----
-
-## 📄 License
-MIT License
-
----
-
-## 📬 Contact
-**Nishant Modi**  
-📧 nishantmodimaster@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/nishantmodi92)
+## 🔗 Repository
+[👉 GitHub – ChatConnect](https://github.com/nishantmodi92/ChatConnect)
+"""
