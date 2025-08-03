@@ -22,12 +22,11 @@ _A Secure Real-time Messaging Android App_
 
 | Login & Authentication | Real-time Group Chat | Notifications |
 |------------------------|----------------------|----------------|
-| ![Login](assets/login.gif) | ![Chat](assets/chat.gif) | ![Push](assets/notification.gif) |
+| ![Login](https://postimg.cc/TyTYS0tT) | ![Chat]([chat-screen.png](https://postimg.cc/9zVLr7zs)) | ![Push](https://postimg.cc/Czf1fzZp) |
 
-> _*Note: GIFs represent actual app flows. Replace `assets/*.gif` with your own screen recordings._  
+ 
 
 ---
-
 ## 🚀 Key Features
 
 - 🔐 **End-to-end encrypted chat**
@@ -91,7 +90,9 @@ Run the project via Android Studio Arctic Fox or above.
 
 ✅ App is compatible with Android 6.0+ (API 23+)
 
-📸 Screenshots
+> 📌 Screenshots have been temporarily removed. View full feature flow in the app demo code.
+
+
 
 🧠 Why Use This Project?
 ✅ Real-world Firebase integration
