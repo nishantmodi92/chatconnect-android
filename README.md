@@ -68,11 +68,9 @@ Firebase (Auth, Firestore, FCM)
   Group chats, media previews, and dark/light toggle
   Smart notification flow using FCM topics
 
-🔗 Project References
-GitHub Repo → ChatConnect
 
-Portfolio Site → nishantmodi92.github.io
-
+## 🔗 Links
+[Github Repo](https://github.com/nishantmodi92/chatconnect-android)
 
 
 
