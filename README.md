@@ -1,143 +1,135 @@
-# 🔐 ChatConnect – Encrypted Real-Time Chat App
+ # 🔐 ChatConnect – Encrypted Real-Time Chat App  
 
-![Kotlin](https://img.shields.io/badge/Kotlin-100%25-blue.svg)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-UI-lightgreen.svg)
-![Firebase](https://img.shields.io/badge/Firebase-Backend-yellow.svg)
-![Crash-Free](https://img.shields.io/badge/Crash--Free-99.9%25-success.svg)
+<p align="center">
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
+  <img src="https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
+  <img src="https://img.shields.io/badge/Hilt-DI-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Crash--Free-99.9%25-success?style=for-the-badge" />
+</p>
 
-> A next-gen, encrypted real-time chat app built with Kotlin, Jetpack Compose, and Firebase – scalable, crash-free, and optimized for performance.
-
----
-
-## 📱 Features
-
-🔒 End-to-End Encryption – Secure private & group chats
-
-🟢 Live Presence – Typing status, online/offline, last seen
-
-🔔 Smart Push Notifications – FCM-powered, topic & user-based
-
-🌗 Dark/Light Mode – Adaptive with Material You design
-
-🎙️ Rich Media Sharing – Images, links, audio messages, documents
-
-💬 Group Chats – Admin controls, member management
-
-📂 Offline Sync – Messages saved locally with Room DB & WorkManager
-
-🔄 Background Workers – Auto message retry & network resilience
-
-🎨 Smooth Animations – Compose-powered transitions for chats
-
-🧑‍🤝‍🧑 Scalable – Tested for 25K+ daily messages
+> A **scalable, encrypted real-time chat app** built with **Kotlin, Jetpack Compose & Firebase**, delivering **25K+ messages/day**, **DAU ↑25%**, and **99.9% crash-free sessions**.
 
 ---
 
-## 📊 Metrics & Impact
+## 📱 Features  
 
-📈 +25% Daily Active Users (DAU) through engagement-driven notifications
-
-💬 25K+ messages/day handled seamlessly
-
-🕒 30% faster cold start vs previous baseline
-
-🧪 99.9% crash-free sessions (Firebase Crashlytics)
-
-🔐 Boosted retention rate due to secure & intuitive UX
-
-## ⚙️ Tech Stack
-
-Language: Kotlin, Coroutines, Flow
-
-UI: Jetpack Compose, Material 3, Accompanist
-
-Backend: Firebase Authentication, Firestore, FCM, Firebase Storage
-
-Architecture: MVVM + Clean Architecture + Repository Pattern
-
-DI: Dagger-Hilt
-
-Async/Workers: Kotlin Coroutines + WorkManager
-
-Local DB: Room Database (offline-first)
-
-Networking: Retrofit (for external APIs like user avatars / link preview)
-
-Build & CI/CD: Gradle + GitHub Actions
+- 🔒 **End-to-End Encryption** – Private & group chats secured  
+- 🟢 **Live Presence** – Typing indicator, last seen, online/offline  
+- 🔔 **Smart Notifications** – FCM-powered, user/topic-based  
+- 🌗 **Dark/Light Mode** – Adaptive Material You design  
+- 🎙 **Rich Media Sharing** – Images, audio, docs, links  
+- 💬 **Group Chats** – Admin roles & member management  
+- 📂 **Offline Sync** – Room DB + WorkManager resilience  
+- 🔄 **Background Workers** – Auto retry for failed messages  
+- 🎨 **Smooth Animations** – Compose transitions for chat  
+- 🧑‍🤝‍🧑 **Scalable** – Tested for **25K+ daily messages**  
 
 ---
 
-## 🧠 Architecture Overview
+## 📊 Business Impact  
 
+- 📈 **+25% DAU** through engaging notifications  
+- 💬 **25K+ messages/day** handled seamlessly  
+- 🚀 **30% faster cold start** with performance tuning  
+- 🧪 **99.9% crash-free sessions** (Firebase Crashlytics)  
+- 🔐 **Improved retention** with secure & intuitive UX  
+
+---
+
+## ⚙️ Tech Stack  
+
+**Language & Core**  
+`Kotlin` · Coroutines · Flow  
+
+**UI & Design**  
+`Jetpack Compose` · Material 3 · Accompanist  
+
+**Backend**  
+`Firebase Auth` · `Firestore` · `Firebase Storage` · `Cloud Messaging (FCM)`  
+
+**Architecture**  
+MVVM · Clean Architecture · Repository Pattern  
+
+**Dependency Injection**  
+Dagger-Hilt  
+
+**Async & Workers**  
+Coroutines · WorkManager  
+
+**Local DB**  
+Room (offline-first persistence)  
+
+**Networking**  
+Retrofit (for avatars & link previews)  
+
+**Build & CI/CD**  
+Gradle · GitHub Actions  
+
+---
+
+## 🧠 Architecture Overview  
+
+```mermaid
 flowchart TD
     UI[Jetpack Compose UI] --> VM[ViewModel (StateFlow, LiveData)]
     VM --> UC[Use Cases (Business Logic)]
     UC --> REPO[Repository Layer]
-    REPO --> DB[Room Database (Offline)]
-    REPO --> FIREBASE[Firebase (Auth, Firestore, FCM, Storage)]
+    REPO --> DB[Room Database (Offline-First)]
+    REPO --> FIREBASE[Firebase: Auth · Firestore · Storage · FCM]
 
-    UI Layer (Compose) → Reactive & declarative UI
-
-ViewModel → Exposes states via StateFlow & LiveData
-
-Use Cases → Encapsulate business logic (clean separation)
-
-Repository → Handles data from Firebase + Local DB
-
-Offline-first → Room + WorkManager ensures resilience
+✅ UI Layer (Compose) → Declarative, reactive UI
+✅ ViewModel → Manages state with StateFlow
+✅ Use Cases → Encapsulated business logic
+✅ Repository → Combines local (Room) + remote (Firebase)
+✅ Offline-First → WorkManager ensures resilience
 
 🛠 Setup Instructions
 🔹 Prerequisites
 
-Android Studio Ladybug | 2024.2.1 or newer
+Android Studio Ladybug | 2024.2.1+
 
 JDK 17+
 
-Firebase project setup (Firestore + Auth + Storage + FCM)
+Firebase project (Firestore, Auth, Storage, FCM)
+
+
 
 🔹 Clone & Import
-
 git clone https://github.com/nishantmodi92/ChatConnect.git
 
-Open in Android Studio
-Sync Gradle
 
-Gradle
+Open in Android Studio → Sync Gradle
 
 🔹 Firebase Setup
 
-Create a Firebase project → Enable Auth (Email/Password, Google Sign-In)
+Enable Auth (Email/Google Sign-In)
 
-Enable Firestore Database (Production mode)
+Enable Firestore DB (Production mode)
 
-Enable Cloud Messaging (FCM) for push notifications
+Enable Cloud Messaging (FCM)
 
-Download google-services.json → Place it in:
-app/
+Download google-services.json → Place in /app/
 
 🔹 Run the App
 
-Select Emulator / Device
-
-Hit Run ▶
+Select Emulator/Device → ▶ Run
 
 🎉 Enjoy real-time, encrypted messaging
 
 🚀 Live Experience
 
 ✅ Real-time 1:1 & Group Chats
-✅ Push Notifications for Active/Background Users
-✅ Offline-first Messaging
-✅ Smooth Dark/Light Mode
-✅ Media Sharing with Previews
+✅ Smart Push Notifications
+✅ Offline-First Messaging
+✅ Dark/Light Mode
+✅ Rich Media Sharing
 
-## 🔗 Links
+🔗 Links
 📂 GitHub Repo
 🌐 Portfolio Website
 
-✨ ChatConnect demonstrates scalable, production-ready Android engineering with Jetpack Compose, Firebase, and clean architecture.
-
-
+<p align="center"><b>✨ ChatConnect proves production-grade Android engineering with Compose, Firebase & scalable clean architecture ✨</b></p> ```
 
 
 
